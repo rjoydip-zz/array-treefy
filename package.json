@@ -1,0 +1,44 @@
+{
+  "name": "array-tree",
+  "version": "1.0.0",
+  "description": "Display array in tree view",
+  "main": "index.js",
+  "bin": {
+    "array-tree": "cli.js"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint **/*.js --ignore-path .gitignore",
+    "precommit": "npm run lint",
+    "clean": "rm -rf node_modules && npm i",
+    "build": "npm uninstall -g array-tree && npm i -g ."
+  },
+  "keywords": [
+    "array-tree",
+    "array tree view",
+    "view array tree"
+  ],
+  "files": [
+    "cli.js",
+    "index.js"
+  ],
+  "repository": "rjoydip/array-tree",
+  "author": {
+    "name": "Joydip Roy",
+    "email": "joydipand@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "meow": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.0.1",
+    "husky": "^1.0.0-rc.10"
+  },
+  "readme": "readme.md",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit"
+    }
+  }
+}
