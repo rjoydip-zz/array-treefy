@@ -1,4 +1,4 @@
-# array-treefy[![Build Status](https://travis-ci.org/rjoydip/array-treefy.svg?branch=master)](https://travis-ci.org/rjoydip/array-treefy)
+# array-treefy [![Build Status](https://travis-ci.org/rjoydip/array-treefy.svg?branch=master)](https://travis-ci.org/rjoydip/array-treefy)
 
 > Display array in tree view
 
