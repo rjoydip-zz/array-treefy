@@ -1,30 +1,30 @@
-# array-tree [![Build Status](https://travis-ci.org/rjoydip/array-tree.svg?branch=master)](https://travis-ci.org/rjoydip/array-tree)
+# array-treefy[![Build Status](https://travis-ci.org/rjoydip/array-treefy.svg?branch=master)](https://travis-ci.org/rjoydip/array-treefy)
 
 > Display array in tree view
 
 ## Install globally
 
 ```
-$ npm i -g array-tree
+$ npm i -g array-treefy
 ```
 
 ## Install locally
 
 ```
-$ npm i --save array-tree
+$ npm i --save array-treefy
 ```
 
 ## Use Programmatically
 
 ```js
-const arrayTree = require("array-tree")
+const arrayTreefy = require("array-treefy")
 arrayTree([1, 2, [3, 4, 5], 6, 7], "x0")
 ```
 
 ## Global usage
 
 ```bash
-$ array-tree "[1,2, [3,4], 5, [6, [7,8], 9], 10]" --label="xo"
+$ array-treefy "[1,2, [3,4], 5, [6, [7,8], 9], 10]" --label="xo"
 ```
 
 ### Output
@@ -48,7 +48,7 @@ xo
 
 ## API
 
-### arrayTree(data [, label])
+### arrayTreefy(data [, label])
 
 Returns a string.
 
@@ -63,4 +63,4 @@ Default: `--`
 
 ## License
 
-MIT © [Joydip Roy (rjoydip)](https://github.com/rjoydip/array-tree/blob/master/license.md)
+MIT © [Joydip Roy (rjoydip)](https://github.com/rjoydip/array-treefy/blob/master/license.md)

@@ -1,20 +1,20 @@
 {
-  "name": "array-tree",
+  "name": "array-treefy",
   "version": "1.0.0",
   "description": "Display array in tree view",
   "main": "index.js",
   "bin": {
-    "array-tree": "cli.js"
+    "array-treefy": "cli.js"
   },
   "scripts": {
     "lint": "./node_modules/.bin/eslint **/*.js --ignore-path .gitignore",
     "precommit": "npm run lint",
     "clean": "rm -rf node_modules && npm i",
     "example": "node example.js",
-    "build": "npm uninstall -g array-tree && npm i -g ."
+    "build": "npm uninstall -g array-treefy && npm i -g ."
   },
   "keywords": [
-    "array-tree",
+    "array-treefy",
     "array tree view",
     "view array tree"
   ],
@@ -22,7 +22,7 @@
     "cli.js",
     "index.js"
   ],
-  "repository": "rjoydip/array-tree",
+  "repository": "rjoydip/array-treefy",
   "author": {
     "name": "Joydip Roy",
     "email": "joydipand@gmail.com"

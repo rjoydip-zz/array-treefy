@@ -1,8 +1,8 @@
-const arrayTree = require('.')
+const arrayTreefy = require('.')
 
 console.log(
 	'Demo 1 \n',
-	arrayTree([
+	arrayTreefy([
 		1, 2, [3, 4, 5],
 		6, 7
 	], 'x0')
@@ -10,7 +10,7 @@ console.log(
 
 console.log(
 	'Demo 2 \n',
-	arrayTree([
+	arrayTreefy([
 		1, 2, [3, 4, 5],
 		6, 7
 	], '')
