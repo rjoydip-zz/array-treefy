@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const arrayTree = require('.')
+const arrayTree = require('./')
 const meow = require('meow')
 const chalk = require('chalk')
 
@@ -26,7 +26,7 @@ module.exports = (async () => {
 			const pkg = require('./package')
 			logger.log(`${pkg.name} version ${chalk.green(`v${pkg.version}`)}`)
 		} else {
-			arrayTree.tree(cli.input[0])
+			logger.log(arrayTree(JSON.parse(cli.input[0]), cli.flags.label))
 		}
 	} else {
 		logger.log(chalk.red('Invalid argument'))

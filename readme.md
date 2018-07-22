@@ -2,17 +2,64 @@
 
 > Display array in tree view
 
-## Install
+## Install globally
 
 ```
 $ npm i -g array-tree
 ```
 
-## Usage
+## Install locally
+
+```
+$ npm i --save array-tree
+```
+
+## Use Programmatically
+
+```js
+const arrayTree = require("array-tree")
+arrayTree([1, 2, [3, 4, 5], 6, 7], "x0")
+```
+
+## Global usage
 
 ```bash
-$ array-tree
+$ array-tree "[1,2, [3,4], 5, [6, [7,8], 9], 10]" --label="xo"
 ```
+
+### Output
+
+```bash
+xo
+├── 1
+├── 2
+├─┬ xo
+│ ├── 3
+│ └── 4
+├── 5
+├─┬ xo
+│ ├── 6
+│ ├─┬ xo
+│ │ ├── 7
+│ │ └── 8
+│ └── 9
+└── 10
+```
+
+## API
+
+### arrayTree(data [, label])
+
+Returns a string.
+
+#### data
+
+Type: `Array`
+
+##### label
+
+Type: `string`<br>
+Default: `--`
 
 ## License
 

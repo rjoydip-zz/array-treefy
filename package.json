@@ -10,6 +10,7 @@
     "lint": "./node_modules/.bin/eslint **/*.js --ignore-path .gitignore",
     "precommit": "npm run lint",
     "clean": "rm -rf node_modules && npm i",
+    "example": "node example.js",
     "build": "npm uninstall -g array-tree && npm i -g ."
   },
   "keywords": [
@@ -28,6 +29,8 @@
   },
   "license": "MIT",
   "dependencies": {
+    "archy": "^1.0.0",
+    "array-to-archy": "^1.1.0",
     "chalk": "^2.4.1",
     "meow": "^5.0.0"
   },
